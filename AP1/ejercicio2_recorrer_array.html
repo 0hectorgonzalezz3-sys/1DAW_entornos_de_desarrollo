@@ -26,15 +26,15 @@
 // ============================================================
 
 function sumar(array) {
-  let total = "";
-  for (let i = 1; i <= array.length; i++) {
+  let total = 0;
+  for (let i = 0; i < array.length; i++) {
     total += array[i];
   }
   return total;
 }
 
 function maximo(array) {
-  let max = 0;
+  let max = array[0];
   for (let i = 0; i < array.length; i++) {
     if (array[i] > max) {
       max = array[i];
@@ -44,7 +44,7 @@ function maximo(array) {
 }
 
 function media(array) {
-  return sumar(array) / array.length();
+  return sumar(array) / array.length;
 }
 
 let numeros = [4, -2, 9, 1, 3];
