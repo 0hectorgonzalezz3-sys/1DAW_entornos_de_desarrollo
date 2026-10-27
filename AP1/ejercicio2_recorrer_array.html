@@ -25,6 +25,9 @@
 // de las DevTools para seguir el valor de las variables.
 // ============================================================
 
+//Tipo:logico
+//he cambiado i=1 por i=0 para que pueda leer el primer elemento del array
+// tambien he cambiado el i<=array.lenght por i<array.lenght para no acceder a una posicion que no haya en el array
 function sumar(array) {
   let total = 0;
   for (let i = 0; i < array.length; i++) {
@@ -32,7 +35,8 @@ function sumar(array) {
   }
   return total;
 }
-
+//Tipo:logico
+//cambie el max=0 por max =array[0] para que funcione con numeros  negativos tambien
 function maximo(array) {
   let max = array[0];
   for (let i = 0; i < array.length; i++) {
@@ -46,7 +50,8 @@ function maximo(array) {
 function media(array) {
   return sumar(array) / array.length;
 }
-
+//tipo: ejecucion
+//he cambiado el array.length() por array.length
 let numeros = [4, -2, 9, 1, 3];
 
 console.log("Suma:", sumar(numeros));

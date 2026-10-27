@@ -26,7 +26,9 @@
 
 function fibonacci(n) {
   let serie = [0, 1];
-
+//error en la linea de calculo 
+//tipo:logica
+//correccion , de [i-3] a [i-2] y en la condicion del bucle he cambiado i<=n por i<n 
   for (let i = 2; i < n; i++) {
   serie.push(serie[i - 1] + serie[i - 2]);
 }

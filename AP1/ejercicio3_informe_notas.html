@@ -28,9 +28,13 @@ function crearInforme(nombre, notas) {
   for (let i = 0; i < notas.length; i++) {
     suma = suma + notas[i];
   }
-
+//tipo:logico
+//he cambiado notas.lenght por notas.length
   let media = suma / notas.length;
-
+//tipo:logico
+//he cambiado resultdo por resultado
+//tipo:ejecucion
+//cambien const res por let res
   let resultado = "SUSPENSO";
   if (media >= 5) {
     resultado = "APROBADO";
@@ -43,7 +47,8 @@ function crearInforme(nombre, notas) {
 
 let notasAna = [8, 7, 6, 9];
 let notasLuis = [3, 5, 4, 5];
-
+//tipo:logico
+//he puesto primero el nombre y luego las notas
 console.log(crearInforme("Ana", notasAna));
 console.log(crearInforme("Luis", notasLuis));
 </script>
